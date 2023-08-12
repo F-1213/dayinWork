@@ -6,7 +6,7 @@ import json as json_module
 from pymongo import MongoClient
 
 app = Sanic(__name__)
-#连数据库
+#连接数据库
 mongodb_uri = "mongodb://localhost:27017"
 database_name = 'usermanage'
 
