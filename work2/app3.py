@@ -6,9 +6,12 @@ import json as json_module
 from pymongo import MongoClient
 
 app = Sanic(__name__)
-
+#连接数据库
 mongodb_uri = "mongodb://localhost:27017"
 database_name = 'usermanage'
+
+#client = MongoClient()
+#db = client["usermanage"]
 
 class db:
     def __init__(self, db_url):
